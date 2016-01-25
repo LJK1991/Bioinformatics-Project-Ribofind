@@ -1,0 +1,16 @@
+made and ran the Locustag.py to isolate the genes provided by the Riboswitches Lucas.csv from the sequence.txt downloaded from NCBI.
+by ([A-Z]+)\n --> \1 followed by (\>) --> \n\1 deletd all the line feeds and made one line seqs.
+
+reformated the .csv file to look like a fasta file
+(\d+)\t([\-\+])\t(\d+)\t(\d+)\t(\w+).+\t([A-Z].+) --> >\5|\2|\1-\3|\4\n\6
+this makes it easier to combine the files.
+combined the fasta files and cleaned it up
+
+going to change the splitting.py
+
+
+TODO:
+make py script so new folders are created for every set instead of all files in one folder creating a chaos of files.
+
+plt22ps
+plt22gif --> can modify annotation with ss-count or .ann files, look further into that
