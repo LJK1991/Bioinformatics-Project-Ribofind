@@ -1,0 +1,1160 @@
+%!PS-Adobe-3.0 EPSF-2.0
+%%BoundingBox: 0 0 612 792
+
+%% Created by boxplot_ng, mfold 3.6
+%% Wed Jan 27 10:37:55 2016
+%%
+%%
+ 1.000000 1.000000 scale
+%%
+%% To change image size ....
+%% For full size image Use Bound ngBox:0 0 612 792
+%%                     and 1.0 1.0 scale
+%% For image .25 of full size, replace 612 with .25*612
+%%           replace 792 with .25*792 and replace
+%%           1.0 with .25: Other scales are similar.
+%%           Valid scales are .05 to 1.00
+%% ONLY scale and Bound ngBox lines above should be changed.
+%%
+
+%% Set colors
+%% 0 is for text, 1 is optimal dots
+%% 2 is almost optimal dots, 3-8 higher energy dots 
+%% 9 is Labels, 10 is background, 11 is grid lines
+%% OP is for lower triangle
+%% original colors from boxplot.col
+
+/color_0 {  0.000 0.000 0.150 setrgbcolor} def 
+/color_1 {  0.000 0.000 0.000 setrgbcolor} def 
+/color_2 {  0.950 0.000 0.000 setrgbcolor} def 
+/color_3 {  0.000 0.850 0.000 setrgbcolor} def 
+/color_4 {  0.750 0.750 0.000 setrgbcolor} def 
+/color_5 {  0.800 0.000 0.800 setrgbcolor} def 
+/color_6 {  0.200 0.600 0.800 setrgbcolor} def 
+/color_7 {  0.650 0.500 0.200 setrgbcolor} def 
+/color_8 {  0.900 0.700 0.700 setrgbcolor} def 
+/color_9 {  0.000 0.000 0.800 setrgbcolor} def 
+/color_10 {  0.990 0.990 0.990 setrgbcolor} def 
+/color_11 {  0.650 0.650 0.650 setrgbcolor} def 
+/color_12 {  0.100 0.100 0.300 setrgbcolor} def 
+/color_OP {  0.000 0.000 0.000 setrgbcolor} def 
+
+/len { 233 } def
+/ISOLatin1Encoding where {pop save true}{false} ifelse
+/reencodeISO {
+   dup length dict begin
+        {1 index /FID ne {def}{pop pop} ifelse} forall
+         /Encoding ISOLatin1Encoding def
+        currentdict
+    end
+} def
+/findISO {
+    dup /FontType known {
+        dup /FontType get 3 ne {
+              dup /CharStrings known {
+                 dup /CharStrings get /Thorn known {
+                     true
+                }{ false } ifelse
+            }{ false } ifelse
+       }{ false } ifelse
+     }{ false } ifelse
+} def
+
+/delta { /Symbol findfont findISO { reencodeISO /Symbol-ISO exch definefont
+                    sf scalefont setfont }
+                   { sf scalefont setfont } ifelse
+  (d) show } def
+
+%%   Define dots 
+
+
+%% Dot shape and Size definitions
+%% s1 is Optimal, s2 next to optimal through s7
+%% sbox is for labels
+
+%% Change si below to adjust size of dots
+%% 1.0 is maximum size without overlapping dots 
+%% sl is for labels 
+%% s1 = 2.0 doubles size of optimal dots, b1
+%% s2 = 2.0 doubles size of near optimal dots dots, b2
+%% Use 0.4352 to make dots 1/72 inch or 1 point
+%% Ignore Si,NSi,len 
+
+/s1 { 1.0000 } def
+/s2 { 1.0000 } def
+/s3 { 1.0000 } def
+/s4 { 1.0000 } def
+
+
+/S1 {.50 s1 mul } def
+/NS1 {-1.0 S1 mul } def
+/S2 {.50 s2 mul } def
+/NS2 {-1.0 S2 mul } def
+/S3 {.50 s3 mul } def
+/NS3 {-1.0 S3 mul } def
+/S4 {.50 s4 mul } def
+/NS4 {-1.0 S4 mul } def
+
+/b1 {
+  exch len exch sub 1 add 
+ moveto
+   S1 S1  rlineto
+   NS1  0 rlineto
+   NS1 NS1 rlineto
+   0   NS1  rlineto
+   S1    0 rlineto
+   S1 S1 rlineto
+   0    S1  rlineto
+   closepath
+   fill
+   stroke
+}def
+/b2 {
+  exch len exch sub 1 add 
+ moveto
+   S2 S2  rlineto
+   NS2  0 rlineto
+   NS2 NS2 rlineto
+   0   NS2  rlineto
+   S2    0 rlineto
+   S2 S2 rlineto
+   0    S2  rlineto
+   closepath
+   fill
+   stroke
+}def
+/b3 {
+  exch len exch sub 1 add 
+ moveto
+   S3 S3  rlineto
+   NS3  0 rlineto
+   NS3 NS3 rlineto
+   0   NS3  rlineto
+   S3    0 rlineto
+   S3 S3 rlineto
+   0    S3  rlineto
+   closepath
+   fill
+   stroke
+}def
+/b4 {
+  exch len exch sub 1 add 
+ moveto
+   S4 S4  rlineto
+   NS4  0 rlineto
+   NS4 NS4 rlineto
+   0   NS4  rlineto
+   S4    0 rlineto
+   S4 S4 rlineto
+   0    S4  rlineto
+   closepath
+   fill
+   stroke
+}def
+
+%% Set background color
+
+  color_10
+
+0 0 moveto
+611 0 rlineto
+0 791 rlineto
+-611 0 rlineto
+0 -791 rlineto
+closepath
+fill
+
+%%   Draw Text 
+
+  color_0
+
+/ISOLatin1Encoding where {pop save true}{false} ifelse
+/reencodeISO {
+   dup length dict begin
+        {1 index /FID ne {def}{pop pop} ifelse} forall
+         /Encoding ISOLatin1Encoding def
+        currentdict
+    end
+} def
+/findISO {
+    dup /FontType known {
+        dup /FontType get 3 ne {
+              dup /CharStrings known {
+                 dup /CharStrings get /Thorn known {
+                     true
+                }{ false } ifelse
+            }{ false } ifelse
+       }{ false } ifelse
+     }{ false } ifelse
+} def
+
+/delta { /Symbol findfont findISO { reencodeISO /Symbol-ISO exch definefont
+                    sf scalefont setfont }
+                   { sf scalefont setfont } ifelse
+  (d) show } def
+/sf 7.5 def
+/Helvetica findfont findISO { reencodeISO /Symbol-ISO exch definefont 
+               sf scalefont setfont }
+               { sf scalefont setfont } ifelse
+15 776.000000 moveto (Output of boxplot_ng (©)) show
+15 765.000000 moveto (mfold 3.6) show
+473.250000 776.000000 moveto (Created Wed Jan 27 10:37:55 2016) show
+
+/sf 20 def
+/Helvetica findfont findISO { reencodeISO /Symbol-ISO exch definefont
+                              sf scalefont setfont }
+        { sf scalefont setfont } ifelse
+ 1.000000 720 moveto
+ (Fold of AM406671|llmg_0079|gene:73937-74962|5-UTR:75290-74962|-|328 at 30° C) show
+ /Helvetica findfont
+ 10 scalefont
+ setfont
+  color_OP
+
+ 30 90 moveto
+ (Lower Triangle: Optimal Energy) show
+  color_0
+
+/sf 10 def
+ 130 690 moveto
+delta
+ /Helvetica findfont
+ 10 scalefont
+ setfont
+ (G in Plot File =     3.1 kcal/mol) show
+  color_1
+
+ 340 90  moveto 
+ (  Optimal Energy   =    -64.5  kcal/mol ) show
+  color_2
+
+ 340 80  moveto
+ (   -64.5 < Energy <=   -63.5  kcal/mol ) show
+  color_3
+
+ 340 70  moveto
+ (   -63.5 < Energy <=   -62.4  kcal/mol ) show
+  color_4
+
+ 340 60  moveto
+ (   -62.4 < Energy <=   -61.4  kcal/mol ) show
+  color_0
+
+ 25 100 translate
+
+%%   Draw Tic Marks 
+
+ 0.05 setlinewidth
+ 2.297872 1. scale
+
+ 0.174074 setlinewidth
+ 234 541 moveto
+ 0 8 rlineto
+ 234 550 moveto
+ 0.435185 1. scale
+ -6 0 rmoveto
+ (233) show
+ 2.297872 1. scale
+
+ 0.174074 setlinewidth
+ 2 541 moveto
+ 0 8 rlineto
+ 2 550 moveto
+ 0.435185 1. scale
+ -6 0 rmoveto
+ (1) show
+ 2.297872 1. scale
+
+ 0.174074 setlinewidth
+ 31 541 moveto
+ 0 8 rlineto
+ stroke
+  color_11
+
+ 31 539 moveto
+ 0 -537.702119 rlineto
+ stroke
+  color_0
+
+ 31 550 moveto
+ 0.435185 1. scale
+ -6 0 rmoveto
+ (30) show
+ 2.297872 1. scale
+
+ 0.174074 setlinewidth
+ 61 541 moveto
+ 0 8 rlineto
+ stroke
+  color_11
+
+ 61 539 moveto
+ 0 -537.702119 rlineto
+ stroke
+  color_0
+
+ 61 550 moveto
+ 0.435185 1. scale
+ -6 0 rmoveto
+ (60) show
+ 2.297872 1. scale
+
+ 0.174074 setlinewidth
+ 91 541 moveto
+ 0 8 rlineto
+ stroke
+  color_11
+
+ 91 539 moveto
+ 0 -537.702119 rlineto
+ stroke
+  color_0
+
+ 91 550 moveto
+ 0.435185 1. scale
+ -6 0 rmoveto
+ (90) show
+ 2.297872 1. scale
+
+ 0.174074 setlinewidth
+ 121 541 moveto
+ 0 8 rlineto
+ stroke
+  color_11
+
+ 121 539 moveto
+ 0 -537.702119 rlineto
+ stroke
+  color_0
+
+ 121 550 moveto
+ 0.435185 1. scale
+ -6 0 rmoveto
+ (120) show
+ 2.297872 1. scale
+
+ 0.174074 setlinewidth
+ 151 541 moveto
+ 0 8 rlineto
+ stroke
+  color_11
+
+ 151 539 moveto
+ 0 -537.702119 rlineto
+ stroke
+  color_0
+
+ 151 550 moveto
+ 0.435185 1. scale
+ -6 0 rmoveto
+ (150) show
+ 2.297872 1. scale
+
+ 0.174074 setlinewidth
+ 181 541 moveto
+ 0 8 rlineto
+ stroke
+  color_11
+
+ 181 539 moveto
+ 0 -537.702119 rlineto
+ stroke
+  color_0
+
+ 181 550 moveto
+ 0.435185 1. scale
+ -6 0 rmoveto
+ (180) show
+ 2.297872 1. scale
+
+ 0.174074 setlinewidth
+ 211 541 moveto
+ 0 8 rlineto
+ stroke
+  color_11
+
+ 211 539 moveto
+ 0 -537.702119 rlineto
+ stroke
+  color_0
+
+ 211 550 moveto
+ 0.435185 1. scale
+ -6 0 rmoveto
+ (210) show
+ 1.0 2.297872 scale
+
+ 0.174074 setlinewidth
+ 541.5 234 moveto
+ 8 0 rlineto
+ 550.5 234 moveto
+ 1.0 0.435185 scale
+ (1) show
+ 1.0 2.297872 scale
+
+ 0.174074 setlinewidth
+ 541.5 2 moveto
+ 8 0 rlineto
+ 550.5 2 moveto
+ 1.0 0.435185 scale
+ (233) show
+ 1.0 2.297872 scale
+
+ 0.174074 setlinewidth
+ 541.5 205 moveto
+ 8 0 rlineto
+ stroke
+  color_11
+
+ 539.5 205 moveto
+ -537.702119 0 rlineto
+ stroke
+  color_0
+
+ 550.5 205 moveto
+ 1.0 0.435185 scale
+ (30) show
+ 1.0 2.297872 scale
+
+ 0.174074 setlinewidth
+ 541.5 175 moveto
+ 8 0 rlineto
+ stroke
+  color_11
+
+ 539.5 175 moveto
+ -537.702119 0 rlineto
+ stroke
+  color_0
+
+ 550.5 175 moveto
+ 1.0 0.435185 scale
+ (60) show
+ 1.0 2.297872 scale
+
+ 0.174074 setlinewidth
+ 541.5 145 moveto
+ 8 0 rlineto
+ stroke
+  color_11
+
+ 539.5 145 moveto
+ -537.702119 0 rlineto
+ stroke
+  color_0
+
+ 550.5 145 moveto
+ 1.0 0.435185 scale
+ (90) show
+ 1.0 2.297872 scale
+
+ 0.174074 setlinewidth
+ 541.5 115 moveto
+ 8 0 rlineto
+ stroke
+  color_11
+
+ 539.5 115 moveto
+ -537.702119 0 rlineto
+ stroke
+  color_0
+
+ 550.5 115 moveto
+ 1.0 0.435185 scale
+ (120) show
+ 1.0 2.297872 scale
+
+ 0.174074 setlinewidth
+ 541.5 85 moveto
+ 8 0 rlineto
+ stroke
+  color_11
+
+ 539.5 85 moveto
+ -537.702119 0 rlineto
+ stroke
+  color_0
+
+ 550.5 85 moveto
+ 1.0 0.435185 scale
+ (150) show
+ 1.0 2.297872 scale
+
+ 0.174074 setlinewidth
+ 541.5 55 moveto
+ 8 0 rlineto
+ stroke
+  color_11
+
+ 539.5 55 moveto
+ -537.702119 0 rlineto
+ stroke
+  color_0
+
+ 550.5 55 moveto
+ 1.0 0.435185 scale
+ (180) show
+ 1.0 2.297872 scale
+
+ 0.174074 setlinewidth
+ 541.5 25 moveto
+ 8 0 rlineto
+ stroke
+  color_11
+
+ 539.5 25 moveto
+ -537.702119 0 rlineto
+ stroke
+  color_0
+
+ 550.5 25 moveto
+ 1.0 0.435185 scale
+ (210) show
+
+ .7 setlinewidth
+  color_0
+
+ 2.297872 2.297872 scale
+
+ 0.304630 setlinewidth
+
+%%   Draw diagonal line 
+
+ 0.564815  235.435181 moveto
+ 235.435181 0.564815  lineto stroke
+ 235.435181 0.564815  moveto 
+ 0.564815 0.564815 lineto
+ 0.564815 235.435181 lineto
+ 235.435181 235.435181 lineto
+ 235.435181 0.564815 lineto closepath stroke
+
+%%   Draw DOTS 
+
+  color_4
+
+19 35 b4
+20 34 b4
+23 32 b4
+24 31 b4
+27 36 b4
+28 35 b4
+29 37 b4
+30 36 b4
+10 75 b4
+11 74 b4
+23 64 b4
+24 63 b4
+25 62 b4
+23 65 b4
+24 64 b4
+25 63 b4
+26 62 b4
+10 79 b4
+11 78 b4
+7 84 b4
+8 83 b4
+9 82 b4
+10 81 b4
+33 63 b4
+34 62 b4
+45 54 b4
+46 53 b4
+34 66 b4
+35 65 b4
+36 64 b4
+37 63 b4
+39 61 b4
+40 60 b4
+42 58 b4
+43 57 b4
+44 56 b4
+45 55 b4
+46 54 b4
+85 95 b4
+86 94 b4
+93 102 b4
+94 101 b4
+89 107 b4
+90 106 b4
+91 105 b4
+92 104 b4
+93 103 b4
+94 102 b4
+78 130 b4
+79 129 b4
+80 128 b4
+81 127 b4
+9 201 b4
+10 200 b4
+12 198 b4
+13 197 b4
+14 196 b4
+16 194 b4
+17 193 b4
+18 192 b4
+19 191 b4
+20 190 b4
+21 189 b4
+22 188 b4
+23 187 b4
+24 186 b4
+25 185 b4
+26 184 b4
+27 183 b4
+28 182 b4
+34 177 b4
+35 176 b4
+79 132 b4
+80 131 b4
+66 146 b4
+67 145 b4
+83 129 b4
+84 128 b4
+85 127 b4
+74 139 b4
+75 138 b4
+76 137 b4
+77 136 b4
+78 135 b4
+79 134 b4
+71 143 b4
+72 142 b4
+73 141 b4
+105 118 b4
+106 117 b4
+107 116 b4
+60 175 b4
+61 174 b4
+62 173 b4
+63 172 b4
+64 171 b4
+4 232 b4
+5 231 b4
+6 230 b4
+7 229 b4
+8 228 b4
+9 227 b4
+10 226 b4
+129 146 b4
+130 145 b4
+131 144 b4
+142 167 b4
+143 166 b4
+123 222 b4
+124 221 b4
+125 220 b4
+113 234 b4
+114 233 b4
+115 232 b4
+116 231 b4
+118 229 b4
+119 228 b4
+121 226 b4
+122 225 b4
+165 190 b4
+166 189 b4
+165 191 b4
+166 190 b4
+190 224 b4
+191 223 b4
+192 222 b4
+193 221 b4
+194 220 b4
+195 219 b4
+198 222 b4
+199 221 b4
+201 225 b4
+202 224 b4
+223 232 b4
+224 231 b4
+  color_3
+
+85 98 b3
+86 97 b3
+87 96 b3
+88 95 b3
+86 101 b3
+87 100 b3
+88 99 b3
+91 99 b3
+92 98 b3
+103 116 b3
+104 115 b3
+105 114 b3
+106 113 b3
+95 125 b3
+96 124 b3
+97 123 b3
+99 121 b3
+100 120 b3
+135 143 b3
+136 142 b3
+217 225 b3
+218 224 b3
+219 227 b3
+220 226 b3
+222 232 b3
+223 231 b3
+224 230 b3
+  color_2
+
+87 99 b2
+88 98 b2
+89 97 b2
+  color_1
+
+27 37 b1
+  color_OP
+
+35 29 b1
+  color_1
+
+28 36 b1
+  color_OP
+
+34 30 b1
+  color_1
+
+29 35 b1
+  color_OP
+
+33 31 b1
+  color_1
+
+12 74 b1
+  color_OP
+
+72 14 b1
+  color_1
+
+13 73 b1
+  color_OP
+
+71 15 b1
+  color_1
+
+14 72 b1
+  color_OP
+
+70 16 b1
+  color_1
+
+15 71 b1
+  color_OP
+
+69 17 b1
+  color_1
+
+16 70 b1
+  color_OP
+
+68 18 b1
+  color_1
+
+17 69 b1
+  color_OP
+
+67 19 b1
+  color_1
+
+0 87 b1
+  color_OP
+
+85 2 b1
+  color_1
+
+1 86 b1
+  color_OP
+
+84 3 b1
+  color_1
+
+2 85 b1
+  color_OP
+
+83 4 b1
+  color_1
+
+3 84 b1
+  color_OP
+
+82 5 b1
+  color_1
+
+4 83 b1
+  color_OP
+
+81 6 b1
+  color_1
+
+5 82 b1
+  color_OP
+
+80 7 b1
+  color_1
+
+9 78 b1
+  color_OP
+
+76 11 b1
+  color_1
+
+10 77 b1
+  color_OP
+
+75 12 b1
+  color_1
+
+22 67 b1
+  color_OP
+
+65 24 b1
+  color_1
+
+23 66 b1
+  color_OP
+
+64 25 b1
+  color_1
+
+24 65 b1
+  color_OP
+
+63 26 b1
+  color_1
+
+25 64 b1
+  color_OP
+
+62 27 b1
+  color_1
+
+26 63 b1
+  color_OP
+
+61 28 b1
+  color_1
+
+37 60 b1
+  color_OP
+
+58 39 b1
+  color_1
+
+38 59 b1
+  color_OP
+
+57 40 b1
+  color_1
+
+39 58 b1
+  color_OP
+
+56 41 b1
+  color_1
+
+40 57 b1
+  color_OP
+
+55 42 b1
+  color_1
+
+41 56 b1
+  color_OP
+
+54 43 b1
+  color_1
+
+42 55 b1
+  color_OP
+
+53 44 b1
+  color_1
+
+89 102 b1
+  color_OP
+
+100 91 b1
+  color_1
+
+90 101 b1
+  color_OP
+
+99 92 b1
+  color_1
+
+91 100 b1
+  color_OP
+
+98 93 b1
+  color_1
+
+92 99 b1
+  color_OP
+
+97 94 b1
+  color_1
+
+101 125 b1
+  color_OP
+
+123 103 b1
+  color_1
+
+102 124 b1
+  color_OP
+
+122 104 b1
+  color_1
+
+103 123 b1
+  color_OP
+
+121 105 b1
+  color_1
+
+104 122 b1
+  color_OP
+
+120 106 b1
+  color_1
+
+105 121 b1
+  color_OP
+
+119 107 b1
+  color_1
+
+106 120 b1
+  color_OP
+
+118 108 b1
+  color_1
+
+107 119 b1
+  color_OP
+
+117 109 b1
+  color_1
+
+135 146 b1
+  color_OP
+
+144 137 b1
+  color_1
+
+136 145 b1
+  color_OP
+
+143 138 b1
+  color_1
+
+137 144 b1
+  color_OP
+
+142 139 b1
+  color_1
+
+146 165 b1
+  color_OP
+
+163 148 b1
+  color_1
+
+147 164 b1
+  color_OP
+
+162 149 b1
+  color_1
+
+148 163 b1
+  color_OP
+
+161 150 b1
+  color_1
+
+149 162 b1
+  color_OP
+
+160 151 b1
+  color_1
+
+150 161 b1
+  color_OP
+
+159 152 b1
+  color_1
+
+151 160 b1
+  color_OP
+
+158 153 b1
+  color_1
+
+152 159 b1
+  color_OP
+
+157 154 b1
+  color_1
+
+126 201 b1
+  color_OP
+
+199 128 b1
+  color_1
+
+127 200 b1
+  color_OP
+
+198 129 b1
+  color_1
+
+128 199 b1
+  color_OP
+
+197 130 b1
+  color_1
+
+129 198 b1
+  color_OP
+
+196 131 b1
+  color_1
+
+130 197 b1
+  color_OP
+
+195 132 b1
+  color_1
+
+131 196 b1
+  color_OP
+
+194 133 b1
+  color_1
+
+170 187 b1
+  color_OP
+
+185 172 b1
+  color_1
+
+171 186 b1
+  color_OP
+
+184 173 b1
+  color_1
+
+172 185 b1
+  color_OP
+
+183 174 b1
+  color_1
+
+173 184 b1
+  color_OP
+
+182 175 b1
+  color_1
+
+174 183 b1
+  color_OP
+
+181 176 b1
+  color_1
+
+175 182 b1
+  color_OP
+
+180 177 b1
+  color_1
+
+166 194 b1
+  color_OP
+
+192 168 b1
+  color_1
+
+167 193 b1
+  color_OP
+
+191 169 b1
+  color_1
+
+168 192 b1
+  color_OP
+
+190 170 b1
+  color_1
+
+203 218 b1
+  color_OP
+
+216 205 b1
+  color_1
+
+204 217 b1
+  color_OP
+
+215 206 b1
+  color_1
+
+205 216 b1
+  color_OP
+
+214 207 b1
+  color_1
+
+206 215 b1
+  color_OP
+
+213 208 b1
+  color_1
+
+207 214 b1
+  color_OP
+
+212 209 b1
+  color_1
+
+219 234 b1
+  color_OP
+
+232 221 b1
+  color_1
+
+220 233 b1
+  color_OP
+
+231 222 b1
+  color_1
+
+221 232 b1
+  color_OP
+
+230 223 b1
+  color_1
+
+222 231 b1
+  color_OP
+
+229 224 b1
+  color_1
+
+223 230 b1
+  color_OP
+
+228 225 b1
+  color_1
+
+  color_0
+
+ 0.435185 0.435185 scale
+ -25 -100 translate
+ 27 78 moveto
+ /Helvetica findfont
+ 10 scalefont
+ setfont
+ ( Upper Triangle Base Pairs Plotted: 239 ) show
+ showpage
+%%EOF

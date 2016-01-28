@@ -1,0 +1,1679 @@
+%!PS-Adobe-3.0 EPSF-2.0 
+%%BoundingBox: 0 0 792 1072
+ 1.0 1.0 scale
+%% Created from ct or ss file by sir_graph.c, mfold 3.6
+
+%% Wed Jan 27 10:36:55 2016
+%%
+%%
+ 0.0000 0.0000 translate
+%%     This translate,scale controls zooming 
+ 1.00000 1.00000 scale
+%%
+%%
+%% defaults: 0 0 translate, 1 1 scale for full image
+%% m n translate, sc sc scale 
+%% is used to zoom about point (x,y) with scale sc 
+%% m= -1*(x*scale-396) 
+%% n= -1*(y*scale-536) 
+%% for (x,y) 0,0 is bottom left, 0<x<792, 0<y<1072
+%%
+%%
+%% To change image size for some viewers ....
+%% Either alter Bound ngBox
+%% or 1.0 1.0 scale
+%% Valid scales are .05 to 1.00
+%% ONLY scale and Bound ngBox lines above may be changed.
+%% The scale for change of size is
+%% before the translate,scale for zooming%%
+%%
+/m {moveto} def
+/l {lineto} def
+/s {stroke} def
+/a {arc} def
+%% c_rad far below defines radius of base pair dots
+%% Define colors for postscript 
+%% c_k is background, c_t is for general text
+%% c_b is bases, c_m is for main circle
+%% c_g is for connecting lines or dots for GC, CG 
+%% c_a is for connecting lines or dots for  AU,UA 
+%% c_u is for connecting   GU,UG 
+%% c_o is for connecting arcs for other 
+%% in circle graph, c_g may be used for all types 
+%% of connecting arcs
+%% c_c for header 
+%% c_n for number of label 
+%% c_l for line of label 
+%% Colors originally set in sir_graph_color.h
+/c_  { 1.000 0.871 0.678 setrgbcolor} def
+/c_k { 1.000 1.000 1.000 setrgbcolor} def
+/c_b { 0.000 0.000 0.000 setrgbcolor} def
+/c_t { 0.000 0.000 0.125 setrgbcolor} def
+/c_m { 0.188 0.188 0.188 setrgbcolor} def
+/c_g { 1.000 0.000 0.000 setrgbcolor} def
+/c_a { 0.251 0.188 0.651 setrgbcolor} def
+/c_u { 0.063 0.498 0.063 setrgbcolor} def
+/c_o { 0.816 0.808 0.078 setrgbcolor} def
+/c_c { 0.000 0.000 0.314 setrgbcolor} def
+/c_n { 0.000 0.000 0.125 setrgbcolor} def
+/c_l { 0.141 0.141 0.141 setrgbcolor} def
+/c_s { 0.000 0.000 0.000 setrgbcolor} def
+/c_x { 0.000 0.000 0.000 setrgbcolor} def
+/c_z { 1.000 1.000 1.000 setrgbcolor} def
+
+/ISOLatin1Encoding where {pop save true}{false} ifelse
+/reencodeISO {
+   dup length dict begin
+        {1 index /FID ne {def}{pop pop} ifelse} forall
+         /Encoding ISOLatin1Encoding def
+        currentdict
+    end
+} def
+/findISO {
+    dup /FontType known {
+        dup /FontType get 3 ne {
+              dup /CharStrings known {
+                 dup /CharStrings get /Thorn known {
+                     true
+                }{ false } ifelse
+            }{ false } ifelse
+       }{ false } ifelse
+     }{ false } ifelse
+} def
+ c_k
+%% Set background color
+0 0 m
+792 0 rlineto
+0 1072 rlineto
+-792 0 rlineto
+0 -1072 rlineto
+closepath
+fill
+ c_c
+/sf 9 def
+/Helvetica findfont findISO { reencodeISO /Symbol-ISO exch definefont 
+               sf scalefont setfont }
+               { sf scalefont setfont } ifelse
+15 1060.000000 moveto
+ (Output of sir_graph ©) show
+15 1049.000000 moveto
+ (mfold 3.6) show
+628.500000 1060.000000 moveto (Created Wed Jan 27 10:36:55 2016) show
+ c_t
+/Helvetica-Oblique findfont
+18 scalefont
+setfont
+112.500000 15 m
+ (dG =  -54.99 AM406671|llmg_0079|gene:73937-74962|5-UTR:75290-74) show
+ 1.000000 setlinewidth
+ c_m
+s
+%% Adjust the radius annotated base here
+/c_drad { 5.8936 } def 
+ c_b
+ c_b
+ 1.000000 setlinewidth
+359.83 478.30 m
+357.85 484.55 l
+s
+354.88 493.91 m
+352.90 500.15 l
+s
+349.93 509.51 m
+347.95 515.75 l
+s
+344.98 525.12 m
+342.99 531.36 l
+s
+340.02 540.72 m
+338.04 546.96 l
+s
+331.94 553.33 m
+322.42 556.82 l
+s
+315.16 562.64 m
+312.73 566.44 l
+s
+309.86 575.48 m
+309.65 579.99 l
+s
+311.97 589.10 m
+317.76 598.67 l
+s
+318.81 607.55 m
+316.83 613.80 l
+s
+311.56 621.60 m
+302.52 629.06 l
+s
+299.77 636.99 m
+302.54 649.80 l
+s
+302.02 659.26 m
+299.94 665.47 l
+s
+296.83 674.79 m
+294.76 681.00 l
+s
+291.65 690.32 m
+289.58 696.53 l
+s
+286.47 705.84 m
+284.39 712.06 l
+s
+281.28 721.37 m
+279.21 727.59 l
+s
+272.94 733.62 m
+268.79 734.83 l
+s
+260.71 739.78 m
+259.68 740.88 l
+s
+254.87 749.14 m
+254.42 750.58 l
+s
+253.73 760.12 m
+253.96 761.60 l
+s
+257.49 770.51 m
+260.48 774.90 l
+s
+261.90 783.69 m
+260.11 789.98 l
+s
+257.42 799.43 m
+255.62 805.73 l
+s
+252.93 815.18 m
+251.13 821.47 l
+s
+248.44 830.92 m
+246.65 837.22 l
+s
+243.08 846.32 m
+227.29 877.39 l
+s
+222.09 885.68 m
+218.13 890.90 l
+s
+212.20 898.72 m
+208.24 903.94 l
+s
+201.52 911.03 m
+193.11 918.17 l
+s
+191.27 925.87 m
+193.14 930.33 l
+s
+199.92 935.48 m
+204.72 936.08 l
+s
+211.65 932.24 m
+216.26 922.21 l
+s
+221.28 913.84 m
+225.24 908.62 l
+s
+231.17 900.80 m
+235.13 895.58 l
+s
+233.93 895.06 m
+232.89 901.53 l
+s
+231.34 911.23 m
+230.30 917.70 l
+s
+228.75 927.40 m
+227.72 933.86 l
+s
+226.17 943.56 m
+225.13 950.03 l
+s
+223.58 959.73 m
+222.54 966.19 l
+s
+217.30 973.08 m
+205.59 978.43 l
+s
+198.68 984.73 m
+195.73 989.87 l
+s
+193.10 999.04 m
+192.87 1004.96 l
+s
+194.81 1014.30 m
+197.36 1019.65 l
+s
+203.41 1027.02 m
+208.15 1030.57 l
+s
+216.94 1034.29 m
+222.79 1035.22 l
+s
+232.29 1034.43 m
+237.91 1032.54 l
+s
+245.96 1027.43 m
+250.05 1023.14 l
+s
+254.80 1014.87 m
+256.44 1009.17 l
+s
+256.80 999.64 m
+255.60 993.84 l
+s
+251.00 985.70 m
+241.54 976.96 l
+s
+238.71 968.78 m
+239.75 962.31 l
+s
+241.30 952.61 m
+242.33 946.15 l
+s
+243.88 936.45 m
+244.92 929.98 l
+s
+246.47 920.28 m
+247.51 913.82 l
+s
+249.06 904.12 m
+250.09 897.65 l
+s
+254.76 889.80 m
+264.62 882.21 l
+s
+269.58 874.42 m
+270.68 869.42 l
+s
+269.26 860.39 m
+263.54 850.66 l
+s
+262.39 841.70 m
+264.19 835.41 l
+s
+266.88 825.96 m
+268.67 819.66 l
+s
+271.37 810.21 m
+273.16 803.92 l
+s
+275.85 794.47 m
+277.65 788.17 l
+s
+282.78 780.32 m
+298.17 767.62 l
+s
+300.45 759.82 m
+294.70 742.10 l
+s
+294.74 732.77 m
+296.81 726.56 l
+s
+299.92 717.24 m
+302.00 711.03 l
+s
+305.11 701.71 m
+307.18 695.50 l
+s
+310.29 686.18 m
+312.36 679.97 l
+s
+315.47 670.65 m
+317.55 664.44 l
+s
+323.19 657.06 m
+329.60 652.78 l
+s
+335.21 645.38 m
+335.99 642.99 l
+s
+335.53 633.83 m
+332.93 627.92 l
+s
+332.44 618.75 m
+334.42 612.51 l
+s
+340.40 605.86 m
+350.65 601.38 l
+s
+357.79 595.27 m
+360.23 591.47 l
+s
+363.10 582.43 m
+363.30 577.92 l
+s
+360.73 568.97 m
+354.96 560.63 l
+s
+353.65 551.91 m
+355.63 545.67 l
+s
+358.60 536.31 m
+360.58 530.07 l
+s
+363.55 520.71 m
+365.53 514.46 l
+s
+368.50 505.10 m
+370.48 498.86 l
+s
+373.46 489.50 m
+375.44 483.26 l
+s
+381.83 478.38 m
+395.55 477.85 l
+s
+405.09 476.03 m
+410.75 474.05 l
+s
+419.45 469.68 m
+424.42 466.32 l
+s
+431.57 459.75 m
+440.19 449.06 l
+s
+447.92 446.84 m
+454.11 448.97 l
+s
+463.39 452.17 m
+469.58 454.31 l
+s
+478.87 457.51 m
+485.06 459.65 l
+s
+493.29 464.60 m
+501.70 472.43 l
+s
+509.92 474.14 m
+514.79 472.41 l
+s
+521.02 466.13 m
+522.70 461.24 l
+s
+521.67 452.46 m
+518.90 448.09 l
+s
+511.38 444.37 m
+499.93 445.35 l
+s
+490.40 444.17 m
+484.21 442.04 l
+s
+474.92 438.83 m
+468.73 436.70 l
+s
+459.44 433.50 m
+453.25 431.36 l
+s
+448.97 424.86 m
+449.40 418.85 l
+s
+454.58 413.03 m
+461.01 411.81 l
+s
+470.66 409.97 m
+477.09 408.75 l
+s
+486.74 406.91 m
+493.18 405.69 l
+s
+502.82 403.85 m
+509.26 402.63 l
+s
+518.91 400.79 m
+525.34 399.56 l
+s
+534.99 397.73 m
+541.42 396.50 l
+s
+549.87 398.90 m
+559.27 407.48 l
+s
+567.79 411.16 m
+573.64 411.59 l
+s
+582.96 409.81 m
+588.24 407.27 l
+s
+595.42 401.07 m
+598.72 396.22 l
+s
+601.84 387.26 m
+602.28 381.42 l
+s
+600.50 372.10 m
+597.95 366.82 l
+s
+591.76 359.64 m
+586.91 356.34 l
+s
+577.95 353.22 m
+572.11 352.78 l
+s
+562.79 354.56 m
+557.51 357.11 l
+s
+550.93 363.66 m
+545.34 375.09 l
+s
+538.36 380.42 m
+531.93 381.65 l
+s
+522.28 383.48 m
+515.85 384.71 l
+s
+506.20 386.54 m
+499.76 387.77 l
+s
+490.11 389.60 m
+483.68 390.83 l
+s
+474.03 392.66 m
+467.60 393.89 l
+s
+457.95 395.72 m
+451.52 396.95 l
+s
+444.03 393.74 m
+433.80 377.87 l
+s
+427.17 370.85 m
+420.24 365.77 l
+s
+411.54 361.57 m
+393.33 356.61 l
+s
+388.01 350.44 m
+387.23 343.94 l
+s
+386.07 334.18 m
+385.30 327.68 l
+s
+384.13 317.93 m
+383.36 311.43 l
+s
+382.20 301.67 m
+381.42 295.17 l
+s
+380.26 285.42 m
+379.48 278.91 l
+s
+382.96 271.26 m
+394.93 263.06 l
+s
+401.02 255.82 m
+403.82 249.68 l
+s
+405.95 240.30 m
+406.08 233.56 l
+s
+403.96 224.26 m
+397.08 210.58 l
+s
+397.50 202.04 m
+401.01 196.51 l
+s
+406.27 188.22 m
+409.78 182.69 l
+s
+416.50 175.82 m
+426.06 169.45 l
+s
+429.62 161.85 m
+429.06 156.71 l
+s
+424.38 149.20 m
+420.02 146.43 l
+s
+411.23 145.40 m
+406.35 147.09 l
+s
+400.99 153.55 m
+399.30 164.92 l
+s
+395.95 173.92 m
+392.45 179.45 l
+s
+387.19 187.75 m
+383.68 193.28 l
+s
+379.71 191.86 m
+380.49 185.36 l
+s
+381.66 175.61 m
+382.43 169.11 l
+s
+383.60 159.35 m
+384.38 152.85 l
+s
+385.55 143.10 m
+386.33 136.60 l
+s
+387.50 126.84 m
+388.28 120.34 l
+s
+389.45 110.59 m
+390.23 104.09 l
+s
+393.32 94.99 m
+399.20 85.12 l
+s
+399.13 76.72 m
+396.42 72.33 l
+s
+388.96 67.57 m
+383.83 66.96 l
+s
+375.46 69.82 m
+371.78 73.45 l
+s
+369.73 81.59 m
+373.11 92.57 l
+s
+373.97 102.14 m
+373.19 108.64 l
+s
+372.02 118.39 m
+371.24 124.90 l
+s
+370.08 134.65 m
+369.30 141.15 l
+s
+368.13 150.90 m
+367.35 157.41 l
+s
+366.18 167.16 m
+365.40 173.66 l
+s
+364.23 183.41 m
+363.45 189.91 l
+s
+346.76 194.09 m
+343.01 188.72 l
+s
+337.39 180.66 m
+333.64 175.29 l
+s
+330.97 166.35 m
+331.46 147.73 l
+s
+327.08 140.90 m
+308.72 133.07 l
+s
+301.57 126.99 m
+298.07 121.46 l
+s
+292.81 113.16 m
+289.31 107.63 l
+s
+284.05 99.33 m
+280.55 93.79 l
+s
+275.29 85.50 m
+271.79 79.96 l
+s
+266.54 71.67 m
+263.03 66.13 l
+s
+259.69 57.12 m
+258.01 45.76 l
+s
+252.65 39.29 m
+247.77 37.61 l
+s
+238.98 38.63 m
+234.62 41.39 l
+s
+229.94 48.90 m
+229.38 54.03 l
+s
+232.93 61.64 m
+242.49 68.02 l
+s
+249.20 74.89 m
+252.70 80.42 l
+s
+257.96 88.72 m
+261.46 94.25 l
+s
+266.72 102.55 m
+270.22 108.09 l
+s
+275.48 116.38 m
+278.98 121.92 l
+s
+284.24 130.22 m
+287.74 135.75 l
+s
+288.86 144.57 m
+287.24 149.63 l
+s
+286.38 159.18 m
+286.57 160.66 l
+s
+289.94 169.62 m
+290.77 170.87 l
+s
+297.73 177.44 m
+299.02 178.19 l
+s
+308.17 180.66 m
+312.50 180.64 l
+s
+320.22 184.66 m
+323.96 190.03 l
+s
+329.58 198.08 m
+333.33 203.45 l
+s
+335.24 212.31 m
+329.00 245.86 l
+s
+332.06 253.59 m
+358.68 273.07 l
+s
+363.23 280.85 m
+364.00 287.35 l
+s
+365.17 297.11 m
+365.94 303.61 l
+s
+367.10 313.36 m
+367.88 319.87 l
+s
+369.04 329.62 m
+369.81 336.12 l
+s
+370.98 345.88 m
+371.75 352.38 l
+s
+367.86 359.28 m
+360.76 362.48 l
+s
+352.34 367.44 m
+349.93 369.24 l
+s
+342.75 375.86 m
+340.76 378.13 l
+s
+335.11 386.10 m
+333.63 388.73 l
+s
+329.76 397.69 m
+328.86 400.57 l
+s
+326.93 410.15 m
+326.64 413.15 l
+s
+326.74 422.92 m
+327.09 425.91 l
+s
+329.21 435.45 m
+330.17 438.31 l
+s
+334.22 447.20 m
+335.75 449.79 l
+s
+341.56 457.65 m
+343.60 459.87 l
+s
+ 2.000000 setlinewidth
+ c_a
+366.00 475.11 m
+372.24 477.09 l
+s
+ c_a
+361.05 490.71 m
+367.29 492.69 l
+s
+ c_g
+356.09 506.32 m
+362.34 508.30 l
+s
+ c_a
+351.14 521.92 m
+357.38 523.90 l
+s
+ c_a
+346.19 537.53 m
+352.43 539.51 l
+s
+ c_g
+341.24 553.13 m
+347.48 555.11 l
+s
+ c_u
+324.98 604.36 m
+331.22 606.34 l
+s
+ c_a
+320.03 619.96 m
+326.27 621.94 l
+s
+ c_a
+308.23 656.15 m
+314.44 658.23 l
+s
+ c_g
+303.05 671.68 m
+309.26 673.76 l
+s
+ c_u
+297.86 687.21 m
+304.08 689.29 l
+s
+ c_a
+292.68 702.74 m
+298.89 704.81 l
+s
+ c_a
+287.50 718.27 m
+293.71 720.34 l
+s
+ c_g
+282.31 733.80 m
+288.53 735.87 l
+s
+ c_a
+267.97 780.31 m
+274.27 782.10 l
+s
+ c_g
+263.48 796.05 m
+269.78 797.85 l
+s
+ c_a
+259.00 811.80 m
+265.30 813.59 l
+s
+ c_a
+254.51 827.54 m
+260.81 829.34 l
+s
+ c_a
+250.03 843.29 m
+256.32 845.08 l
+s
+ c_a
+228.97 884.74 m
+234.19 888.70 l
+s
+ c_g
+219.08 897.78 m
+224.29 901.74 l
+s
+ c_u
+209.18 910.82 m
+214.40 914.78 l
+s
+ c_g
+239.55 890.99 m
+246.02 892.03 l
+s
+ c_a
+236.97 907.16 m
+243.43 908.19 l
+s
+ c_a
+234.38 923.32 m
+240.84 924.36 l
+s
+ c_g
+231.79 939.49 m
+238.26 940.52 l
+s
+ c_g
+229.21 955.65 m
+235.67 956.69 l
+s
+ c_a
+226.62 971.82 m
+233.08 972.85 l
+s
+ c_a
+444.87 440.59 m
+447.01 434.40 l
+s
+ c_a
+460.35 445.93 m
+462.49 439.74 l
+s
+ c_a
+475.83 451.27 m
+477.96 445.08 l
+s
+ c_a
+491.30 456.61 m
+493.44 450.42 l
+s
+ c_a
+448.83 409.13 m
+447.61 402.69 l
+s
+ c_g
+464.92 406.06 m
+463.69 399.63 l
+s
+ c_a
+481.00 403.00 m
+479.78 396.57 l
+s
+ c_a
+497.08 399.94 m
+495.86 393.51 l
+s
+ c_a
+513.16 396.88 m
+511.94 390.45 l
+s
+ c_u
+529.25 393.82 m
+528.02 387.39 l
+s
+ c_a
+545.33 390.76 m
+544.11 384.33 l
+s
+ c_g
+383.71 355.90 m
+377.21 356.67 l
+s
+ c_g
+381.77 339.64 m
+375.27 340.42 l
+s
+ c_g
+379.84 323.39 m
+373.33 324.16 l
+s
+ c_u
+377.90 307.13 m
+371.40 307.90 l
+s
+ c_g
+375.96 290.87 m
+369.46 291.65 l
+s
+ c_u
+374.03 274.62 m
+367.52 275.39 l
+s
+ c_g
+390.73 203.56 m
+385.20 200.05 l
+s
+ c_u
+399.49 189.74 m
+393.96 186.23 l
+s
+ c_a
+408.26 175.91 m
+402.73 172.40 l
+s
+ c_a
+374.25 196.15 m
+367.75 195.38 l
+s
+ c_g
+376.20 179.90 m
+369.69 179.12 l
+s
+ c_g
+378.14 163.65 m
+371.64 162.87 l
+s
+ c_a
+380.09 147.39 m
+373.59 146.61 l
+s
+ c_g
+382.04 131.14 m
+375.54 130.36 l
+s
+ c_a
+383.99 114.88 m
+377.48 114.10 l
+s
+ c_u
+385.93 98.63 m
+379.43 97.85 l
+s
+ c_a
+345.54 200.93 m
+340.17 204.67 l
+s
+ c_a
+336.17 187.50 m
+330.80 191.25 l
+s
+ c_a
+326.81 174.07 m
+321.44 177.82 l
+s
+ c_a
+300.05 133.77 m
+294.52 137.27 l
+s
+ c_a
+291.29 119.94 m
+285.76 123.44 l
+s
+ c_a
+282.53 106.10 m
+277.00 109.61 l
+s
+ c_a
+273.77 92.27 m
+268.24 95.78 l
+s
+ c_a
+265.01 78.44 m
+259.48 81.95 l
+s
+ c_g
+256.26 64.61 m
+250.72 68.11 l
+s
+/Helvetica findfont
+9.822689 scalefont
+setfont
+ c_b
+358.04 470.35 m
+(A) show
+stroke
+353.09 485.95 m
+(A) show
+stroke
+348.14 501.56 m
+(C) show
+stroke
+343.19 517.16 m
+(A) show
+stroke
+338.23 532.77 m
+(A) show
+stroke
+333.28 548.37 m
+(G) show
+stroke
+314.53 555.23 m
+(A) show
+stroke
+306.81 567.30 m
+(A) show
+stroke
+306.16 581.62 m
+(A) show
+stroke
+317.02 599.60 m
+(G) show
+stroke
+312.07 615.20 m
+(U) show
+stroke
+295.46 628.91 m
+(A) show
+stroke
+300.30 651.33 m
+(A) show
+stroke
+295.12 666.85 m
+(C) show
+stroke
+289.93 682.38 m
+(U) show
+stroke
+284.75 697.91 m
+(U) show
+stroke
+279.56 713.44 m
+(U) show
+stroke
+274.38 728.97 m
+(G) show
+stroke
+260.80 732.93 m
+(A) show
+stroke
+253.04 741.18 m
+(U) show
+stroke
+249.70 751.99 m
+(U) show
+stroke
+251.45 763.18 m
+(U) show
+stroke
+259.97 775.69 m
+(U) show
+stroke
+255.49 791.43 m
+(G) show
+stroke
+251.00 807.18 m
+(A) show
+stroke
+246.51 822.92 m
+(A) show
+stroke
+242.03 838.67 m
+(A) show
+stroke
+221.79 878.50 m
+(U) show
+stroke
+211.89 891.54 m
+(C) show
+stroke
+201.99 904.58 m
+(U) show
+stroke
+186.09 918.07 m
+(C) show
+stroke
+191.77 931.59 m
+(U) show
+stroke
+206.32 933.42 m
+(A) show
+stroke
+215.03 914.48 m
+(G) show
+stroke
+224.93 901.43 m
+(G) show
+stroke
+234.83 888.39 m
+(A) show
+stroke
+233.61 886.53 m
+(A) show
+stroke
+231.43 886.94 m
+(G) show
+stroke
+228.84 903.11 m
+(U) show
+stroke
+226.25 919.27 m
+(U) show
+stroke
+223.67 935.44 m
+(G) show
+stroke
+221.08 951.60 m
+(G) show
+stroke
+218.49 967.77 m
+(U) show
+stroke
+197.85 977.20 m
+(G) show
+stroke
+190.01 990.86 m
+(G) show
+stroke
+189.41 1006.60 m
+(U) show
+stroke
+196.20 1020.81 m
+(U) show
+stroke
+208.81 1030.24 m
+(G) show
+stroke
+224.37 1032.73 m
+(U) show
+stroke
+239.29 1027.70 m
+(G) show
+stroke
+250.17 1016.32 m
+(U) show
+stroke
+254.52 1001.18 m
+(A) show
+stroke
+251.33 985.76 m
+(A) show
+stroke
+234.66 970.35 m
+(A) show
+stroke
+237.25 954.19 m
+(C) show
+stroke
+239.83 938.02 m
+(C) show
+stroke
+242.42 921.86 m
+(A) show
+stroke
+245.01 905.69 m
+(A) show
+stroke
+247.59 889.53 m
+(C) show
+stroke
+265.24 875.94 m
+(G) show
+stroke
+268.47 861.35 m
+(U) show
+stroke
+257.77 843.15 m
+(U) show
+stroke
+262.26 827.41 m
+(U) show
+stroke
+266.75 811.66 m
+(U) show
+stroke
+271.23 795.92 m
+(C) show
+stroke
+275.72 780.17 m
+(A) show
+stroke
+298.69 761.22 m
+(G) show
+stroke
+289.91 734.15 m
+(C) show
+stroke
+295.09 718.62 m
+(A) show
+stroke
+300.28 703.10 m
+(A) show
+stroke
+305.46 687.57 m
+(G) show
+stroke
+310.64 672.04 m
+(G) show
+stroke
+315.83 656.51 m
+(U) show
+stroke
+330.41 646.78 m
+(G) show
+stroke
+334.23 635.05 m
+(A) show
+stroke
+327.68 620.16 m
+(A) show
+stroke
+332.63 604.55 m
+(U) show
+stroke
+351.87 596.13 m
+(G) show
+stroke
+359.60 584.06 m
+(G) show
+stroke
+360.25 569.74 m
+(G) show
+stroke
+348.89 553.32 m
+(C) show
+stroke
+353.84 537.72 m
+(U) show
+stroke
+358.79 522.11 m
+(U) show
+stroke
+363.74 506.51 m
+(G) show
+stroke
+368.70 490.91 m
+(U) show
+stroke
+373.65 475.30 m
+(U) show
+stroke
+397.18 474.38 m
+(A) show
+stroke
+412.11 469.15 m
+(U) show
+stroke
+425.22 460.29 m
+(U) show
+stroke
+440.00 441.96 m
+(A) show
+stroke
+455.47 447.30 m
+(A) show
+stroke
+470.95 452.64 m
+(U) show
+stroke
+486.43 457.98 m
+(U) show
+stroke
+502.02 472.51 m
+(A) show
+stroke
+516.14 467.50 m
+(A) show
+stroke
+521.03 453.33 m
+(U) show
+stroke
+513.00 440.67 m
+(G) show
+stroke
+491.77 442.50 m
+(A) show
+stroke
+476.29 437.16 m
+(A) show
+stroke
+460.81 431.82 m
+(U) show
+stroke
+445.34 426.48 m
+(U) show
+stroke
+446.48 410.68 m
+(U) show
+stroke
+462.56 407.62 m
+(G) show
+stroke
+478.64 404.55 m
+(A) show
+stroke
+494.73 401.49 m
+(U) show
+stroke
+510.81 398.43 m
+(U) show
+stroke
+526.89 395.37 m
+(U) show
+stroke
+542.97 392.31 m
+(A) show
+stroke
+559.62 407.52 m
+(A) show
+stroke
+575.26 408.68 m
+(A) show
+stroke
+589.39 401.86 m
+(A) show
+stroke
+598.21 388.89 m
+(A) show
+stroke
+599.36 373.25 m
+(A) show
+stroke
+592.54 359.12 m
+(A) show
+stroke
+579.58 350.30 m
+(U) show
+stroke
+563.93 349.15 m
+(A) show
+stroke
+549.81 355.97 m
+(A) show
+stroke
+539.91 376.23 m
+(U) show
+stroke
+523.83 379.29 m
+(G) show
+stroke
+507.75 382.35 m
+(A) show
+stroke
+491.67 385.41 m
+(A) show
+stroke
+475.58 388.47 m
+(U) show
+stroke
+459.50 391.53 m
+(C) show
+stroke
+443.42 394.59 m
+(A) show
+stroke
+427.86 370.47 m
+(C) show
+stroke
+413.00 359.59 m
+(G) show
+stroke
+385.31 352.04 m
+(G) show
+stroke
+383.38 335.79 m
+(C) show
+stroke
+381.44 319.53 m
+(C) show
+stroke
+379.50 303.27 m
+(G) show
+stroke
+377.57 287.02 m
+(C) show
+stroke
+375.63 270.76 m
+(U) show
+stroke
+395.71 257.01 m
+(U) show
+stroke
+402.59 241.94 m
+(C) show
+stroke
+402.89 225.38 m
+(C) show
+stroke
+391.60 202.92 m
+(G) show
+stroke
+400.37 189.09 m
+(U) show
+stroke
+409.13 175.27 m
+(U) show
+stroke
+426.87 163.45 m
+(A) show
+stroke
+425.26 148.55 m
+(C) show
+stroke
+412.60 140.53 m
+(A) show
+stroke
+398.43 145.42 m
+(C) show
+stroke
+395.31 166.50 m
+(A) show
+stroke
+386.54 180.33 m
+(G) show
+stroke
+377.77 194.15 m
+(C) show
+stroke
+376.54 194.56 m
+(A) show
+stroke
+375.85 193.46 m
+(A) show
+stroke
+377.80 177.21 m
+(C) show
+stroke
+379.74 160.96 m
+(C) show
+stroke
+381.69 144.70 m
+(U) show
+stroke
+383.64 128.45 m
+(G) show
+stroke
+385.59 112.19 m
+(U) show
+stroke
+387.54 95.94 m
+(U) show
+stroke
+398.44 77.63 m
+(U) show
+stroke
+390.56 64.88 m
+(A) show
+stroke
+375.68 63.10 m
+(C) show
+stroke
+365.01 73.62 m
+(U) show
+stroke
+371.28 93.99 m
+(G) show
+stroke
+369.33 110.24 m
+(A) show
+stroke
+367.39 126.50 m
+(C) show
+stroke
+365.44 142.75 m
+(A) show
+stroke
+363.49 159.01 m
+(G) show
+stroke
+361.54 175.26 m
+(G) show
+stroke
+359.59 191.52 m
+(U) show
+stroke
+355.90 192.80 m
+(C) show
+stroke
+350.15 194.24 m
+(U) show
+stroke
+346.29 194.84 m
+(U) show
+stroke
+336.93 181.41 m
+(A) show
+stroke
+327.56 167.99 m
+(A) show
+stroke
+328.32 139.55 m
+(G) show
+stroke
+300.92 127.86 m
+(A) show
+stroke
+292.17 114.03 m
+(A) show
+stroke
+283.41 100.20 m
+(A) show
+stroke
+274.65 86.37 m
+(A) show
+stroke
+265.89 72.54 m
+(U) show
+stroke
+257.13 58.71 m
+(C) show
+stroke
+254.02 37.63 m
+(A) show
+stroke
+239.86 32.73 m
+(U) show
+stroke
+227.20 40.74 m
+(U) show
+stroke
+225.57 55.64 m
+(U) show
+stroke
+243.30 67.47 m
+(G) show
+stroke
+252.06 81.30 m
+(A) show
+stroke
+260.82 95.13 m
+(U) show
+stroke
+269.58 108.96 m
+(U) show
+stroke
+278.33 122.79 m
+(U) show
+stroke
+287.09 136.62 m
+(U) show
+stroke
+282.46 151.04 m
+(A) show
+stroke
+283.94 162.26 m
+(A) show
+stroke
+290.21 171.68 m
+(A) show
+stroke
+299.99 177.40 m
+(A) show
+stroke
+314.13 177.35 m
+(U) show
+stroke
+323.50 190.78 m
+(U) show
+stroke
+332.87 204.21 m
+(A) show
+stroke
+324.82 247.41 m
+(C) show
+stroke
+359.37 272.70 m
+(G) show
+stroke
+361.31 288.96 m
+(G) show
+stroke
+363.25 305.21 m
+(U) show
+stroke
+365.18 321.47 m
+(G) show
+stroke
+367.12 337.72 m
+(G) show
+stroke
+369.06 353.98 m
+(C) show
+stroke
+353.01 361.23 m
+(A) show
+stroke
+342.72 368.90 m
+(C) show
+stroke
+334.24 378.54 m
+(C) show
+stroke
+327.95 389.73 m
+(G) show
+stroke
+324.12 401.98 m
+(C) show
+stroke
+322.91 414.77 m
+(G) show
+stroke
+324.37 427.52 m
+(C) show
+stroke
+328.45 439.69 m
+(U) show
+stroke
+334.97 450.75 m
+(C) show
+stroke
+343.64 460.22 m
+(A) show
+stroke
+/Helvetica findfont
+8.185575 scalefont
+setfont
+ c_l
+ 0.500000 setlinewidth
+333.00 462.92 m
+(5') show
+357.42 472.38 m
+346.69 468.98 l
+s
+325.71 478.60 m
+(3') show
+344.20 466.56 m
+336.73 474.98 l
+s
+230.84 728.82 m
+(20) show
+252.78 742.39 m
+243.05 736.73 l
+s
+200.04 915.39 m
+(40) show
+225.49 921.90 m
+214.37 920.12 l
+s
+284.00 888.15 m
+(60) show
+272.07 881.25 m
+281.83 886.84 l
+s
+381.28 564.47 m
+(80) show
+367.52 572.13 m
+378.51 569.72 l
+s
+465.55 408.61 m
+(100) show
+465.42 431.23 m
+469.09 420.59 l
+s
+499.62 358.23 m
+(120) show
+510.26 381.60 m
+508.15 370.55 l
+s
+442.35 135.58 m
+(140) show
+432.01 149.67 m
+441.56 143.72 l
+s
+339.06 123.58 m
+(160) show
+366.60 129.28 m
+355.42 127.95 l
+s
+198.31 63.83 m
+(180) show
+224.99 60.28 m
+214.38 64.04 l
+s
+340.41 356.89 m
+(200) show
+368.27 357.74 m
+357.09 359.07 l
+s
+showpage
+%%EOF
