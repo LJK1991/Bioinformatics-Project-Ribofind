@@ -57,7 +57,7 @@ pygame.init()
 # Set the width and height of the screen [width,height]
 size = [591, 800]
 screen = pygame.display.set_mode(size)
-pygame.display.set_caption("My Game")
+pygame.display.set_caption("Bioinformatics project")
 # Loop until the user clicks the close button.
 done = False
 # Used to manage how fast the screen updates
