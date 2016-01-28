@@ -3,19 +3,19 @@
 import csv
 import os
 
-LocusList=os.popen('cut -f 5 /home/manager/Bionformatics-Project-Ribofind/Startfile/Riboswitches\ Lucas.csv').read().split()
+LocusList=os.popen('cut -f 5 /home/manager/Bioinformatics-Project-Ribofind/Startfile/Riboswitches\ Lucas.csv').read().split()
 LocusList.pop(0)
 
-L2file = open('/home/manager/Bionformatics-Project-Ribofind/Locusfile2.txt', 'r')
-L1file = open('/home/manager/Bionformatics-Project-Ribofind/LocusFile.txt', 'r')
+L2file = open('/home/manager/Bioinformatics-Project-Ribofind/Locusfile2.txt', 'r')
+L1file = open('/home/manager/Bioinformatics-Project-Ribofind/LocusFile.txt', 'r')
 
 L2List = L2file.readlines()
 L1List = L1file.readlines()
 
 print(len(L1List), len(L2List), len(LocusList))
-os.mkdir('/home/manager/Bionformatics-Project-Ribofind/Riboswitch_sequences')
+os.mkdir('/home/manager/Bioinformatics-Project-Ribofind/Riboswitch_sequences')
 for i in range(0,len(L1List),2):
-    newfile = open("/home/manager/Bionformatics-Project-Ribofind/Riboswitch_sequences/{0}.fas".format(LocusList[i//2]), 'w')
+    newfile = open("/home/manager/Bioinformatics-Project-Ribofind/Riboswitch_sequences/{0}.fas".format(LocusList[i//2]), 'w')
     newfile.write(L1List[i].replace("\n",""))
     newfile.write(L2List[i])
     newfile.write(L2List[i+1].replace("\n",""))
