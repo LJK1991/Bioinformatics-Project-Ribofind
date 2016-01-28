@@ -14,6 +14,16 @@ mfold-3.6 --> http://unafold.rna.albany.edu/?q=mfold/download-mfold
 pygame --> http://www.pygame.org/hifi.html note* if using py3 make sure you have v1.9.2 pre
 
 first few .py scripts are for reformatting the starting files i had.
-collectingGeneseq.py
-splittingfas.py
+collectingGeneseq
+splitfasfile
+combineLocusfile
+
+the rest is used to mimic polymerase run mfold, change file format (pdf to png) and then pygame.
+
+TODO:
+optimally the additionally found terminator sequences would be highlighted in the .pdf mfold creates.
+after two days of trying i concluded that this would be really hard and required chaning the code of mfold.
+also tried additional ct to pdf drawing programs, stumbeld on the same problem.
+now the info is shown in the pygame screen. However, have not reformatted and searched trough the terminator.txt file.
+
 
