@@ -26,4 +26,4 @@ after two days of trying i concluded that this would be really hard and required
 also tried additional ct to pdf drawing programs, stumbeld on the same problem.
 now the info is shown in the pygame screen. However, have not reformatted and searched trough the terminator.txt file.
 
-
+note* you will need to change the directories in the .py scripts, as they are catered for my pc in another directory.
