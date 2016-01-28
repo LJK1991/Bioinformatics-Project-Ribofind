@@ -37,10 +37,10 @@ GREEN = (0, 255, 0)
 RED = (255, 0, 0)
 
 #make the matrix here to prevent doing this 60* per sec in the main while loop
-FoldList = os.popen('ls -p /home/flucas/Documents/Bioinformatics/week3/Riboswitch_sequences/llmg_0079 | grep /').read().split()
+FoldList = os.popen('ls -p /home/manager/Bioinformatics-Project-Ribofind/Riboswitch_sequences/llmg_0079 | grep /').read().split()
 matrix=[]
 for i in range(len(FoldList)):
-    os.chdir("/home/flucas/Documents/Bioinformatics/week3/Riboswitch_sequences/llmg_0079/{0}".format(FoldList[i]))
+    os.chdir("/home/manager/Bioinformatics-Project-Ribofind/Riboswitch_sequences/llmg_0079/{0}".format(FoldList[i]))
     pngList = os.popen('ls | grep png').read().split()
     if len(pngList) == 0:
         continue
@@ -49,7 +49,7 @@ for i in range(len(FoldList)):
 
 #draw matrix function. to draw one pic when defined here image should be called only once instead of 60* per sec
 def draw_matrix(i, j):
-    background_image = pygame.image.load("/home/flucas/Documents/Bioinformatics/week3/Riboswitch_sequences/llmg_0079/{0}{1}".format(FoldList[i+10], matrix[i][j])).convert()
+    background_image = pygame.image.load("/home/manager/Bioinformatics-Project-Ribofind/Riboswitch_sequences/llmg_0079/{0}{1}".format(FoldList[i+10], matrix[i][j])).convert()
     screen.blit(background_image, [0,0])
 
 # Setup pygame 
