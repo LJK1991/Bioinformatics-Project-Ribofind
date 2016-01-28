@@ -14,3 +14,6 @@ mfold-3.6 --> http://unafold.rna.albany.edu/?q=mfold/download-mfold
 pygame --> http://www.pygame.org/hifi.html note* if using py3 make sure you have v1.9.2 pre
 
 first few .py scripts are for reformatting the starting files i had.
+collectingGeneseq.py
+splittingfas.py
+
