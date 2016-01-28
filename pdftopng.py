@@ -2,11 +2,11 @@
 
 import os
 
-FoldList = os.popen('ls -p /home/flucas/Documents/Bioinformatics/week3/Riboswitch_sequences/llmg_0079 | grep /').read().split()
+FoldList = os.popen('ls -p /home/manager/Bioinformatics-Project-Ribofind/Riboswitch_sequences/llmg_0079 | grep /').read().split()
 
 
 for i in range(len(FoldList)):
-    os.chdir("/home/flucas/Documents/Bioinformatics/week3/Riboswitch_sequences/llmg_0079/{0}".format(FoldList[i]))
+    os.chdir("/home/manager/Bioinformatics-Project-Ribofind/Riboswitch_sequences/llmg_0079/{0}".format(FoldList[i]))
     pdfList = os.popen('ls | grep pdf').read().split()
     if len(pdfList) == 0:
         continue
