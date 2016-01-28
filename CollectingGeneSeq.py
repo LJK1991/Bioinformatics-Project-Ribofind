@@ -1,7 +1,7 @@
 # In[make a list from the loci tags found in the Riboswitch csv and search them in the complete genome file so the gene sequences can be put together]:
 
 import os
-LocusList=os.popen('cut -f 5 /home/flucas/Documents/Bioinformatics/week3/Startfile/Riboswitches\ Lucas.csv').read().split()
+LocusList=os.popen('cut -f 5 /home/flucas/Documents/Bioinformatics/week3/Startfiles/Riboswitches\ Lucas.csv').read().split()
 
 LocusFile = open('LocusFile.txt', 'w')
 print(len(LocusList))
